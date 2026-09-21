@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - Elpam Jovi Anata</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #172033;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            padding: 20px 8%;
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .back {
+            text-decoration: none;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .back:hover {
+            color: #2563eb;
+        }
+
+
+        /* MAIN */
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+
+
+        /* PROFILE HEADER */
+
+        .profile-header {
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e3a8a,
+                #2563eb
+            );
+
+            border-radius: 25px;
+            padding: 55px 40px;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            box-shadow: 0 20px 40px rgba(37,99,235,0.15);
+        }
+
+        .profile-header img {
+            width: 190px;
+            height: 190px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 7px solid rgba(255,255,255,0.8);
+        }
+
+        .profile-header .label {
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: #bfdbfe;
+            margin-bottom: 10px;
+        }
+
+        .profile-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .profile-header p {
+            color: #dbeafe;
+            font-size: 17px;
+        }
+
+
+        /* INFORMATION */
+
+        .information {
+            margin-top: 30px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .info-box {
+            background: white;
+            padding: 25px;
+
+            border-radius: 15px;
+
+            border: 1px solid #e5e7eb;
+
+            box-shadow: 0 8px 25px rgba(15,23,42,0.05);
+        }
+
+        .info-box .icon {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #dbeafe;
+            color: #2563eb;
+
+            border-radius: 10px;
+
+            margin-bottom: 15px;
+
+            font-weight: bold;
+        }
+
+        .info-box h3 {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 7px;
+        }
+
+        .info-box p {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+
+        /* ABOUT */
+
+        .section {
+            background: white;
+
+            margin-top: 30px;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            border: 1px solid #e5e7eb;
+
+            box-shadow: 0 8px 25px rgba(15,23,42,0.05);
+        }
+
+        .section h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .section h2 span {
+            color: #2563eb;
+        }
+
+        .section p {
+            color: #64748b;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+
+        /* HOBBY */
+
+        .hobbies {
+            margin-top: 20px;
+        }
+
+        .hobby {
+            display: inline-block;
+
+            padding: 10px 18px;
+
+            margin: 5px;
+
+            border-radius: 50px;
+
+            background: #eff6ff;
+
+            color: #2563eb;
+
+            font-weight: bold;
+
+            border: 1px solid #dbeafe;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            margin-top: 60px;
+
+            padding: 30px;
+
+            background: #0f172a;
+
+            color: #94a3b8;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 700px) {
+
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-header h1 {
+                font-size: 32px;
+            }
+
+            .information {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            TEAM.ID
+        </div>
+        <a href="../index.html" class="back">
+            ← Back to Profiles
+        </a>
+    </nav>
+    <main class="container">
+
+        <!-- PROFILE HEADER -->
+        <div class="profile-header">
+            <img
+                src="orang1.jpg"
+                alt="Elpam Jovi Anata"
+            >
+
+            <div>
+                <div class="label">
+                    TEAM PROFILE 01
+                </div>
+                <h1>
+                    Elpam Jovi Anata
+                </h1>
+                <p>
+                    Information Systems Student
+                </p>
+            </div>
+        </div>
+
+        <!-- INFORMATION -->
+        <div class="information">
+            <div class="info-box">
+                <div class="icon">
+                    ID
+                </div>
+                <h3>
+                    NIM
+                </h3>
+                <p>
+                    2025081046
+                </p>
+            </div>
+
+
+            <div class="info-box">
+                <div class="icon">
+                    🎂
+                </div>
+                <h3>
+                    Tanggal Lahir
+                </h3>
+                <p>
+                    7 September 2006
+                </p>
+            </div>
+
+
+            <div class="info-box">
+                <div class="icon">
+                    🎓
+                </div>
+                <h3>
+                    Program Studi
+                </h3>
+                <p>
+                    Sistem Informasi
+                </p>
+            </div>
+            <div class="info-box">
+                <div class="icon">
+                    🏫
+                </div>
+                <h3>
+                    Universitas
+                </h3>
+                <p>
+                    Universitas Pembangunan Jaya
+                </p>
+            </div>
+        </div>
+        <!-- ABOUT -->
+        <div class="section">
+            <h2>
+                About <span>Me</span>
+            </h2>
+            <p>
+                Saya adalah mahasiswa Sistem Informasi di Universitas
+                Pembangunan Jaya yang memiliki ketertarikan pada teknologi,
+                khususnya programming dan web development. Saya tertarik
+                mempelajari bagaimana sebuah website dan sistem dapat
+                dibangun untuk menyelesaikan berbagai kebutuhan.
+            </p>
+        </div>
+
+        <!-- HOBBY -->
+        <div class="section">
+            <h2>
+                My <span>Hobbies</span>
+            </h2>
+            <div class="hobbies">
+                <span class="hobby">
+                    🎸 Musik
+                </span>
+                <span class="hobby">
+                    💻 Programming
+                </span>
+                <span class="hobby">
+                    🌐 Web Development
+                </span>
+                <span class="hobby">
+                    🎮 Gaming
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            © 2026 <strong>Student Profile</strong>
+        </p>
+    </footer>
+</body>
+</html>
