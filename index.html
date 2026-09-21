@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #172033;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-text {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            color: #93c5fd;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #dbeafe;
+        }
+
+        .total {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* PROFILE SECTION */
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: 70px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        .profiles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 10px 30px rgba(15,23,42,0.07);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(37,99,235,0.15);
+        }
+
+        .card img {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #dbeafe;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-content .number {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .card-content h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            color: #64748b;
+            margin-bottom: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px;
+            margin-top: 80px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 850px) {
+
+            .profiles {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .nav-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">TEAM.ID</div>
+        <div class="nav-text">Team Profile Website</div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Meet Our <span>Team</span>
+            </h1>
+            <p>
+                Selamat datang di website profile mahasiswa.
+                Kenali lebih dekat siapa kami, mulai dari identitas,
+                latar belakang, hingga hobi dan aktivitas kami.
+            </p>
+            <div class="total">
+                <strong>04</strong> Student Profiles
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Our Profiles</h2>
+            <p>Pilih salah satu profile untuk mengenal lebih dekat.</p>
+        </div>
+        <div class="profiles">
+            <!-- PROFILE 1 -->
+            <div class="card">
+                <img src="profile/orang1.jpg" alt="Elpam Jovi Anata">
+                <div class="card-content">
+                    <div class="number">PROFILE 01</div>
+                    <h3>Elpam Jovi Anata</h3>
+                    <p>Information Systems Student</p>
+                    <a href="profile/profile1.html" class="btn">
+                        View Profile →
+                    </a>
+                </div>
+            </div>
+            <!-- PROFILE 2 -->
+            <div class="card">
+                <img src="profile/orang2.jpg" alt="Mahasiswa 2">
+                <div class="card-content">
+                    <div class="number">PROFILE 02</div>
+                    <h3>Nama Mahasiswa 2</h3>
+                    <p>Information Systems Student</p>
+                    <a href="profile/profile2.html" class="btn">
+                        View Profile →
+                    </a>
+                </div>
+            </div>
+            <!-- PROFILE 3 -->
+            <div class="card">
+                <img src="profile/orang3.jpg" alt="Mahasiswa 3">
+                <div class="card-content">
+                    <div class="number">PROFILE 03</div>
+                    <h3>Nama Mahasiswa 3</h3>
+                    <p>Information Systems Student</p>
+                    <a href="profile/profile3.html" class="btn">
+                        View Profile →
+                    </a>
+                </div>
+            </div>
+            <!-- PROFILE 4 -->
+            <div class="card">
+                <img src="profile/orang4.jpg" alt="Mahasiswa 4">
+                <div class="card-content">
+                    <div class="number">PROFILE 04</div>
+                    <h3>Nama Mahasiswa 4</h3>
+                    <p>Information Systems Student</p>
+                    <a href="profile/profile4.html" class="btn">
+                        View Profile →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 <strong>Student Profile</strong>.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
